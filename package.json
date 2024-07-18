@@ -1,0 +1,18 @@
+{
+  "name": "@fynal/common",
+  "version": "1.0.2",
+  "description": "Fynal public packages",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc; cp src/index.d.ts build/"
+  },
+  "keywords": [],
+  "author": "liukehong@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
