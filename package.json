@@ -1,11 +1,13 @@
 {
   "name": "@fynal/common",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "Fynal public packages",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
-    "build": "tsc; cp src/index.d.ts build/"
+    "build": "tsc; cp src/index.d.ts build/",
+    "prepublishOnly": "pnpm version minor",
+    "publish": "npm publish --registry=https://registry.npmjs.org --access public"
   },
   "keywords": [],
   "author": "liukehong@gmail.com",
